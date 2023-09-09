@@ -1,0 +1,60 @@
+.friends {
+  padding: 65px 15px 15px 15px;
+
+  background-color: white;
+}
+.friends .friends-container {
+  padding: 15px 0px;
+  display: flex;
+  flex-wrap: wrap;
+  gap: 10px;
+}
+.friends .friends-container h2 {
+  margin-bottom: 15px;
+}
+.friends .friends-container .friend-box {
+  flex-basis: calc(50% - 10px);
+  border: 1px solid #ddd;
+  display: flex;
+  align-items: center;
+  padding: 5px 10px;
+  border-radius: 6px;
+}
+.friends .friends-container .friend-box .profile-pic-container {
+  overflow: hidden;
+  width: 90px;
+  height: 90px;
+  border-radius: 6px;
+  margin-right: 10px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.friends .friends-container .friend-box .profile-pic-container:hover {
+  opacity: 0.8;
+}
+.friends .friends-container .friend-box .profile-pic-container img {
+  object-fit: cover;
+  width: 100%;
+}
+.friends .friends-container .friend-box .friend-info {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  flex: 1;
+}
+.friends .friends-container .friend-box .friend-info .friend-name {
+  font-weight: 500;
+  cursor: pointer;
+}
+.friends .friends-container .friend-box .friend-info .mutual-friends {
+  font-size: 14px;
+  color: #65676b;
+}
+@media (max-width: 767px) {
+  .friends {
+    padding-top: 40px;
+  }
+  .friends-container {
+    flex-direction: column;
+  }
+}

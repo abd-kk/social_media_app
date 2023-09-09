@@ -1,0 +1,53 @@
+.right-side-bar {
+  flex-basis: 30%;
+  padding: 15px 10px;
+}
+.right-side-bar .birthday-section {
+  display: flex;
+  align-items: center;
+  margin-bottom: 20px;
+}
+.right-side-bar .birthday-section .image-holder {
+  width: 50px;
+  margin-right: 10px;
+}
+.right-side-bar .birthday-section .image-holder img {
+  width: 100%;
+  object-fit: cover;
+}
+.right-side-bar .online-friends-section .online-friend {
+  margin-bottom: 10px;
+  display: flex;
+  align-items: center;
+  cursor: pointer;
+}
+.right-side-bar .online-friends-section .online-friend .image-holder {
+  border-radius: 50%;
+  position: relative;
+  margin-right: 10px;
+}
+.right-side-bar .online-friends-section .online-friend .image-holder::after {
+  content: "";
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 12px;
+  height: 12px;
+  border-radius: 50%;
+  background-color: #31a24c;
+  z-index: 100;
+}
+.right-side-bar .online-friends-section .online-friend .image-holder img {
+  width: 45px;
+  height: 45px;
+  object-fit: cover;
+  border-radius: 50%;
+}
+.right-side-bar .online-friends-section .online-friend .user-name {
+  font-weight: 500;
+}
+@media (max-width: 787px) {
+  .right-side-bar {
+    display: none;
+  }
+}

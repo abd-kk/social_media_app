@@ -1,0 +1,8 @@
+.saved {
+  padding-top: 56px;
+}
+@media (max-width: 767px) {
+  .saved {
+    padding-top: 40px;
+  }
+}

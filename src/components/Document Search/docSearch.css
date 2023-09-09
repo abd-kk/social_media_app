@@ -1,0 +1,118 @@
+.doc-search {
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100vw;
+  height: 100%;
+  background-color: rgba(52, 58, 70, 0.8);
+  z-index: 10000;
+  display: flex;
+  justify-content: center;
+}
+.doc-search .doc-search-container {
+  background-color: #1876f27b;
+  padding: 10px 20px;
+  border-radius: 15px 10px;
+  background-color: #23272f;
+}
+.doc-search .doc-search-form {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin-bottom: 15px;
+  background-color: #343a46;
+  border-radius: 6px;
+  overflow: hidden;
+}
+.doc-search .doc-search-form form {
+  flex: 1;
+  background-color: inherit;
+  padding: 0px 15px;
+  border-radius: 50px;
+  display: flex;
+  align-items: center;
+}
+.doc-search .doc-search-form label {
+  margin-right: 15px;
+}
+.doc-search .doc-search-form input {
+  background-color: #343a46;
+  padding: 10px;
+  border: none;
+  flex: 1;
+  color: white;
+}
+.doc-search .doc-search-form input:focus {
+  outline: none;
+}
+.doc-search .doc-search-form .close-button {
+  background-color: #343a46;
+  border: none;
+  padding: 10px;
+  cursor: pointer;
+  margin-left: 20px;
+  color: white;
+  font-weight: 300;
+}
+.doc-search .doc-search-dropdown {
+  color: white;
+  font-weight: 300;
+}
+.doc-search .doc-search-dropdown .recent {
+  margin-bottom: 10px;
+}
+.doc-search .doc-search-item {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  padding: 15px 15px 15px 0;
+  border-top-right-radius: 10px;
+  border-bottom-right-radius: 10px;
+  cursor: pointer;
+  margin-bottom: 10px;
+  position: relative;
+}
+.doc-search .doc-search-item:hover {
+  background-color: #1877f2;
+}
+.doc-search .doc-search-item div:first-child {
+  flex: 1;
+}
+.doc-search .doc-search-item div:first-child span {
+  margin-left: 10px;
+}
+.doc-search .doc-search-item .icons {
+  display: flex;
+  align-items: center;
+}
+.doc-search .doc-search-item .icons .icon {
+  margin-left: 10px;
+}
+.doc-search .doc-search-item .remove-item-button {
+  border: none;
+  font-size: 17px;
+  font-weight: bold;
+  margin-left: 10px;
+  color: white;
+  font-weight: 300;
+}
+.doc-search .doc-search-item .remove-item-button path {
+  pointer-events: none;
+}
+@media (max-width: 767px) {
+  .doc-search .doc-search-container {
+    width: 100%;
+    border-radius: 0;
+  }
+}
+@media (min-width: 768px) {
+  .doc-search .doc-search-container {
+    max-width: 48rem;
+    width: 100%;
+    margin: 20px 0px;
+  }
+
+  .doc-search .doc-search-item {
+    padding-left: 10px;
+  }
+}

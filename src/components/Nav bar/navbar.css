@@ -1,0 +1,127 @@
+.nav-bar {
+  background-color: #1877f2;
+  display: flex;
+  align-items: center;
+  padding: 0px 20px;
+  color: white;
+  min-height: 56px;
+  position: fixed;
+  top: 0;
+  left: 0;
+  width: 100%;
+  z-index: 1000;
+}
+.nav-bar a {
+  text-decoration: none;
+  color: inherit;
+}
+.nav-bar .logo-holder {
+  flex-basis: 20%;
+  font-size: 25px;
+  padding-right: 10px;
+}
+.nav-bar .search-bar-holder {
+  flex-basis: 35%;
+  flex-shrink: 1;
+  position: relative;
+}
+.nav-bar .search-bar-holder svg {
+  position: absolute;
+  color: black;
+  left: 10px;
+  top: 50%;
+  transform: translateY(-50%);
+}
+.nav-bar .search-bar-holder input {
+  width: 100%;
+  padding: 5px 35px;
+  border-radius: 30px;
+}
+.nav-bar .search-bar-holder input:focus {
+  outline: none;
+}
+.nav-bar .links-holder {
+  display: flex;
+  justify-content: space-around;
+  align-items: center;
+  flex: 1;
+}
+.nav-bar .links-holder .links a {
+  margin-right: 10px;
+}
+.nav-bar .links-holder .icons-holder .icon {
+  font-size: 20px;
+  position: relative;
+  cursor: pointer;
+}
+.nav-bar .links-holder .icons-holder *:not(:last-child) {
+  margin-right: 15px;
+}
+.expand-sidebar-icon {
+  display: none;
+}
+.nav-bar .links-holder .profile .profile-circle {
+  height: 40px;
+  width: 40px;
+  border-radius: 50%;
+  cursor: pointer;
+}
+.nav-bar .links-holder .profile .profile-circle img {
+  height: 100%;
+  width: 100%;
+  border-radius: 50%;
+  object-fit: cover;
+}
+@media (max-width: 767px) {
+  .nav-bar {
+    padding: 0px 5px;
+    min-height: 40px;
+  }
+  .nav-bar .logo-holder {
+    flex-basis: 15%;
+    font-size: 15px;
+  }
+  .nav-bar .links-holder {
+    justify-content: space-between;
+  }
+  .nav-bar .links-holder .links {
+    display: none;
+  }
+  .nav-bar .search-bar-holder {
+    display: none;
+  }
+  .navbar .icons-holder .search-icon {
+    display: block;
+    cursor: pointer;
+  }
+  .nav-bar .links-holder .icons-holder .icon {
+    font-size: 15px;
+  }
+  .nav-bar .links-holder .links a {
+    font-size: 14px;
+  }
+  .nav-bar .links-holder .icons-holder *:not(:last-child) {
+    margin-right: 20px;
+  }
+  .nav-bar .links-holder .profile .profile-circle {
+    width: 30px;
+    height: 30px;
+  }
+}
+@media (min-width: 768px) {
+  .nav-bar .icons-holder .search-icon {
+    display: none;
+  }
+}
+@media (max-width: 992px) {
+  .nav-bar {
+    font-size: 15px;
+  }
+  .expand-sidebar-icon {
+    display: inline;
+  }
+  .nav-bar .links-holder .profile .profile-circle {
+    height: 35px;
+    width: 35px;
+  }
+}

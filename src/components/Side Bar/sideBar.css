@@ -1,0 +1,54 @@
+.side-bar {
+  flex-basis: 25%;
+  position: sticky;
+  left: 0;
+  top: 56px;
+  height: calc(100vh - 56px);
+  overflow-y: scroll;
+  background-color: rgb(255 255 255);
+  padding: 10px 20px;
+}
+.side-bar::-webkit-scrollbar {
+  width: 5px;
+}
+.side-bar::-webkit-scrollbar-thumb {
+  background-color: rgb(179, 179, 179);
+}
+.side-bar::-webkit-scrollbar-track {
+  background-color: #f1f1f1;
+}
+.side-bar .online-friends-list {
+  padding-top: 10px;
+}
+.side-bar .online-friend {
+  display: flex;
+  align-items: center;
+  padding: 10px 0px;
+  cursor: pointer;
+  transition: 0.5s;
+}
+.side-bar .online-friend:hover {
+  background-color: #eee;
+}
+.side-bar .profile-circle {
+  height: 30px;
+  width: 30px;
+  border-radius: 50%;
+  overflow: hidden;
+  margin-right: 15px;
+}
+.side-bar .profile-circle img {
+  width: 100%;
+  object-fit: cover;
+}
+
+@media (max-width: 767px) {
+  .side-bar {
+    min-height: calc(100vh - 40px);
+  }
+}
+@media (max-width: 991px) {
+  .side-bar {
+    display: none;
+  }
+}

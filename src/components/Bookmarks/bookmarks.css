@@ -1,0 +1,36 @@
+.bookmarks {
+  margin-top: 56px;
+  padding: 25px 15px;
+  background-color: #ffffff;
+  min-height: 100vh;
+}
+.bookmarks .profile {
+  display: flex;
+  align-items: center;
+  transition: 0.5s;
+  padding: 12px 10px;
+  border-radius: 6px;
+  cursor: pointer;
+  height: 52px;
+}
+.bookmarks .profile:hover {
+  background-color: #ccc;
+}
+.bookmarks .profile .profile-circle {
+  overflow: hidden;
+  width: 40px;
+  height: 40px;
+  border-radius: 50%;
+  margin-right: 10px;
+}
+.bookmarks .profile .profile-circle img {
+  width: 100%;
+}
+.bookmarks .profile .user-name {
+  font-weight: 500;
+}
+@media (max-width: 767px) {
+  .bookmarks {
+    margin-top: 40px;
+  }
+}
