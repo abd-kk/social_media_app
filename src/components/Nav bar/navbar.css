@@ -65,6 +65,81 @@
   width: 40px;
   border-radius: 50%;
   cursor: pointer;
+  position: relative;
+}
+.nav-bar .links-holder .profile .profile-circle .drop-down-list {
+  content: "";
+  position: absolute;
+  top: calc(100% + 20px);
+  right: 0;
+  width: 360px;
+  height: 200px;
+  border-radius: 6px;
+  background-color: #ffffff;
+  box-shadow: 0px 0px 16px -8px rgba(0, 0, 0, 0.68);
+  color: black;
+  overflow: hidden;
+}
+.nav-bar .links-holder .profile .profile-circle .drop-down-list ul {
+  position: absolute;
+  top: 0;
+  transition: 0.6s;
+  padding: 10px;
+}
+.nav-bar .links-holder .profile .profile-circle .drop-down-list .main-list {
+  right: 100%;
+}
+.nav-bar .links-holder .profile .profile-circle .drop-down-list .display-list {
+  left: 100%;
+}
+.nav-bar .links-holder .profile .profile-circle .drop-down-list ul.active {
+  position: relative;
+}
+.nav-bar
+  .links-holder
+  .profile
+  .profile-circle
+  .drop-down-list
+  .main-list.active {
+  right: 0;
+}
+.nav-bar .links-holder .profile-circle .drop-down-list .display-list.active {
+  left: 0;
+}
+.nav-bar .links-holder .drop-down-list ul .profile-info {
+  display: flex;
+  align-items: center;
+  margin-bottom: 5px;
+  transition: 0.5s;
+  padding: 8px;
+  border-radius: 6px;
+}
+.nav-bar .links-holder .drop-down-list ul .profile-info:hover {
+  background-color: #aaaaaa3f;
+}
+.nav-bar .links-holder .profile .profile-circle .drop-down-list li {
+  padding: 10px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  cursor: pointer;
+  transition: 0.6s;
+  border-radius: 6px;
+}
+.nav-bar .links-holder .profile .profile-circle .drop-down-list li:hover {
+  background-color: #aaaaaa3f;
+}
+.nav-bar
+  .links-holder
+  .profile
+  .profile-circle
+  .drop-down-list
+  li
+  .profile-circle {
+  margin-right: 10px;
+}
+.nav-bar .links-holder .profile .profile-circle .drop-down-list li .icon {
+  margin-right: 10px;
 }
 .nav-bar .links-holder .profile .profile-circle img {
   height: 100%;
